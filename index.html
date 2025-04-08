@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Mobile Number Location Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-mobile-alt"></i> Indian Mobile Number Tracker</h1>
+        
+        <div class="search-box">
+            <input type="tel" id="mobileNumber" placeholder="Enter 10-digit Indian mobile number" maxlength="10">
+            <button id="searchBtn">Check Location</button>
+        </div>
+        
+        <div class="result-container" id="resultContainer">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Fetching location data...</p>
+            </div>
+            
+            <div class="result" id="result">
+                <!-- Results will be displayed here -->
+            </div>
+            
+            <div class="error" id="error">
+                <!-- Errors will be displayed here -->
+            </div>
+        </div>
+        
+        <div class="disclaimer">
+            <p><i class="fas fa-info-circle"></i> This is a demo application. Real location tracking requires access to telecom operator databases.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
