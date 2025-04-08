@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+h1 i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #3498db;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #2980b9;
+}
+
+.result-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.result {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+}
+
+.result h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.result-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.result-label {
+    font-weight: bold;
+    width: 120px;
+    color: #7f8c8d;
+}
+
+.result-value {
+    flex: 1;
+}
+
+.error {
+    background-color: #fdecea;
+    color: #d32f2f;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+.disclaimer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1976d2;
+}
+
+.disclaimer i {
+    margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-box input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .search-box button {
+        border-radius: 5px;
+    }
+}
+
+/* Previous CSS remains the same, just update the container width */
+.container {
+    max-width: 500px;
+    /* rest remains same */
+}
+
+/* Add this new rule for operator logos */
+.operator-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
